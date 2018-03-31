@@ -1,0 +1,33 @@
+{
+	"ImportPath": "worker",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/anaskhan96/soup",
+			"Comment": "v1.1",
+			"Rev": "cd07662ec9300d16d2ece1c24b0b29ad89f65ff4"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
+		},
+		{
+			"ImportPath": "github.com/levigross/grequests",
+			"Comment": "0.9-12-gbf97883",
+			"Rev": "bf9788368aa04abf510962fd0fb0d8e4b74396cc"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "b68f30494add4df6bd8ef5e82803f308e7f7c59c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "b68f30494add4df6bd8ef5e82803f308e7f7c59c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/publicsuffix",
+			"Rev": "b68f30494add4df6bd8ef5e82803f308e7f7c59c"
+		}
+	]
+}

@@ -1,9 +1,9 @@
-package main
+package worker
 
 import (
+	"github.com/anaskhan96/soup"
 	"github.com/levigross/grequests"
 	"log"
-	"github.com/anaskhan96/soup"
 	"strings"
 )
 
