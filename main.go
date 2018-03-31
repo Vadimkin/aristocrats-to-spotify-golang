@@ -19,17 +19,17 @@ func getPage(page string) string {
 
 func getTrackList(content string) []Track {
 	var tracks []Track
-	var soupDocument = soup.HTMLParse(content)
+	soupDocument := soup.HTMLParse(content)
 
 	links := soupDocument.FindAll("div", "class", "track")
 
 	for _, link := range links {
-		var trackName = link.Text()
+		trackName := link.Text()
 		trackName = strings.TrimLeft(trackName, " - ")
 
-		var trackAuthor = link.Find("span", "class", "artist").Text()
+		trackAuthor := link.Find("span", "class", "artist").Text()
 
-		var track = Track{trackName, trackAuthor}
+		track := Track{trackName, trackAuthor}
 		tracks = append(tracks, track)
 	}
 
@@ -37,8 +37,8 @@ func getTrackList(content string) []Track {
 }
 
 func main() {
-	var response = getPage(AristocratsMain)
-	var tracks = getTrackList(response)
+	response := getPage(AristocratsMain)
+	tracks := getTrackList(response)
 
 	for _, track := range tracks {
 		log.Println(track.author, "-", track.title)
