@@ -1,4 +1,4 @@
-package worker
+package parser
 
 const AristocratsMain = "http://aristocrats.fm/playlists/"
 
