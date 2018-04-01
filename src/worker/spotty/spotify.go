@@ -35,6 +35,7 @@ func addTrackToPlaylist(playlistID spotify.ID, track spotify.FullTrack) {
         playlistID,
         track.ID,
     )
+    fmt.Println(track.URI)
     fmt.Println(res)
     fmt.Println(err)
 }

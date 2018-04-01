@@ -12,6 +12,10 @@ func getClient() spotify.Client {
         ClientID:     SPOTIFY_ID,
         ClientSecret: SPOTIFY_SECRET,
         TokenURL:     spotify.TokenURL,
+        Scopes: []string{
+            spotify.ScopePlaylistModifyPrivate,
+            spotify.ScopePlaylistModifyPublic,
+        },
     }
     token, err := config.Token(context.Background())
     if err != nil {
